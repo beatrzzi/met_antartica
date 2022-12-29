@@ -177,3 +177,7 @@ for i in range(len(file_1.variables['time'])):
     #plt.title('Valid time: {}'.format(vtime), fontsize=35, loc='right')
     #analise
     plt.title('Time: {}'.format(vtime), fontsize=30, loc='right')
+    
+    #--------------------------------------------------------------------------
+    # Salva imagem
+    #plt.savefig(f'/geopt500_pnmm_{vtime}.png', bbox_inches='tight')
