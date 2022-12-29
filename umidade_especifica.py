@@ -166,5 +166,5 @@ for i in range(len(file_1.variables['time'])):
     
     #--------------------------------------------------------------------------
     # Salva imagem
-    #plt.savefig(f'/home/bmiranda/Desktop/ES2/novo/analise/umidade_especifica_{format(vtime)}.png', bbox_inches='tight')
+    #plt.savefig(f'/umidade_especifica_{format(vtime)}.png', bbox_inches='tight')
    
