@@ -119,13 +119,7 @@ for i in range(len(file_1.variables['time'])):
     gl.xlabel_style = {'size': 29, 'color': 'black'}
     gl.ylabel_style = {'size': 29, 'color': 'black'}
     
-    
-    # intevalos da pnmm
-    intervalo_min2 = np.amin(np.array(pnmm))
-    intervalo_max2 = np.amax(np.array(pnmm))
-    interval_2 = 4              # de quanto em quanto voce quer que varie
-    levels_2 = np.arange(intervalo_min2, intervalo_max2, interval_2)
-    
+ 
     # intevalos da adv de temp
     intervalo_min3 = -1.5
     intervalo_max3 = 1.6
@@ -164,24 +158,7 @@ for i in range(len(file_1.variables['time'])):
               fontsize=24,
               fmt = '%3.0f', 
               colors= 'black'
-              )
-    
-    # # plota a imagem pressao
-    # contorno = ax.contour(lons,
-    #                       lats, 
-    #                       pnmm, 
-    #                       colors='black', 
-    #                       linewidths=2, 
-    #                       levels=levels_2
-    #                       )
-    
-    # ax.clabel(contorno, 
-    #           inline = 1, 
-    #           inline_spacing = 1, 
-    #           fontsize=20, 
-    #           fmt = '%3.0f', 
-    #           colors= 'black'
-    #           )
+             )
     
     #adicionando shapefile
     shapefile = list(
@@ -226,4 +203,4 @@ for i in range(len(file_1.variables['time'])):
     
     #--------------------------------------------------------------------------
     # Salva imagem
-    #plt.savefig(f'/home/bmiranda/Desktop/ES2/novo/analise/adveccao_de_temperatura_{vtime}.png', bbox_inches='tight')
+    #plt.savefig(f'/adveccao_de_temperatura_{vtime}.png', bbox_inches='tight')
