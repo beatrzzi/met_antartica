@@ -143,4 +143,8 @@ for i in range(len(file_1.variables['time'])):
     #analise
     plt.title('Time: {}'.format(vtime), fontsize=32, loc='right')
     
+    #--------------------------------------------------------------------------
+    # Salva imagem
+    #plt.savefig(f'/altura_sig_onda_{vtime}.png', bbox_inches='tight')
+    
     
