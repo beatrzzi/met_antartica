@@ -173,5 +173,5 @@ for i in range(len(file_1.variables['time'])):
     
     #--------------------------------------------------------------------------
     # Salva imagem
-    #plt.savefig(f'/home/bmiranda/Desktop/ES2/novo/analise/corrente_de_jato_250_{format(vtime)}.png', bbox_inches='tight')
+    #plt.savefig(f'/corrente_de_jato_250_{format(vtime)}.png', bbox_inches='tight')
 
