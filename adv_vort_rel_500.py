@@ -109,12 +109,6 @@ for i in range(len(file_1.variables['time'])):
     gl.ylabel_style = {'size': 29, 'color': 'black'}
     
     
-    # # intevalos da pnmm
-    # intervalo_min2 = np.amin(np.array(pnmm))
-    # intervalo_max2 = np.amax(np.array(pnmm))
-    # interval_2 = 2              # de quanto em quanto voce quer que varie
-    # levels_2 = np.arange(intervalo_min2, intervalo_max2, interval_2)
-    
     # intevalos da adv vorticidade
     intervalo_min3 = -1.6
     intervalo_max3 = 0
@@ -139,24 +133,7 @@ for i in range(len(file_1.variables['time'])):
                             levels = levels_3, 
                             extend = 'min'
                             )
-    
-    
-    # # plota a imagem pressao
-    # contorno_1 = ax.contour(lons,
-    #                       lats, 
-    #                       pnmm, 
-    #                       colors='black', 
-    #                       linewidths=1, 
-    #                       levels=levels_2
-    #                       )
-    
-    # ax.clabel(contorno_1, 
-    #           inline = 1, 
-    #           inline_spacing = 1, 
-    #           fontsize=20, 
-    #           fmt = '%3.0f', 
-    #           colors= 'black'
-    #           )
+
     
     # plota a imagem geopotencial
     contorno_2 = ax.contour(lons,
@@ -218,4 +195,4 @@ for i in range(len(file_1.variables['time'])):
     
     #--------------------------------------------------------------------------
     # Salva imagem
-    #plt.savefig(f'/home/bmiranda/Desktop/ES2/novo/analise/adveccao_de_vorticidade_{vtime}.png', bbox_inches='tight')
+    #plt.savefig(f'/adveccao_de_vorticidade_{vtime}.png', bbox_inches='tight')
