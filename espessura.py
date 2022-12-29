@@ -188,5 +188,5 @@ for i in range(len(file_1.variables['time'])):
     
     #--------------------------------------------------------------------------
     # Salva imagem
-    #plt.savefig(r'C:\Users\User\OneDrive\Documentos\Meteorologia\es2\analise\espessura_.png', bbox_inches='tight')
+    #plt.savefig(f'\espessura_.png', bbox_inches='tight')
     
