@@ -1,2 +1,2 @@
 # met_antartica
-Scripts elaborados para o trabalho final da disciplina de meteorologia antártica
+Scripts elaborados para o trabalho final da disciplina meteorologia antártica
