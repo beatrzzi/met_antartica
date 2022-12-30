@@ -85,12 +85,6 @@ for i in range(len(file_1.variables['time'])):
         latitude=lat_slice, 
         longitude=lon_slice
         ).metpy.unit_array.squeeze()
-    
-    pnmm = file_2.msl.metpy.sel(
-        time = file_1.time[i], 
-        latitude=lat_slice, 
-        longitude=lon_slice
-        ).metpy.unit_array.squeeze()*0.01
 
     
     #data
