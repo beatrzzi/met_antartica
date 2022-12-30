@@ -7,12 +7,8 @@ Os scripts disponibilizados foram escritos para serem utilizados em uma máquina
 
 # 1) windows (forma escrita nos scripts)
 
-file_1 = xr.open_dataset(
-    r'C:\Users\User\OneDrive\Documentos\Meteorologia\bia\antartica\dados\antartica-pressure-levels.nc'
-    ).metpy.parse_cf()
+file_1 = xr.open_dataset(r'C:\Users\User\OneDrive\Documentos\Meteorologia\bia\antartica\dados\antartica-pressure-levels.nc').metpy.parse_cf()
     
 # 2) linux/ubuntu
 
-file_1 = xr.open_dataset(
-    '/Users/User/OneDrive/Documentos/Meteorologia/bia/antartica/dados/antartica-pressure-levels.nc'
-    ).metpy.parse_cf()
+file_1 = xr.open_dataset('/Users/User/OneDrive/Documentos/Meteorologia/bia/antartica/dados/antartica-pressure-levels.nc').metpy.parse_cf()
